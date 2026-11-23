@@ -1,0 +1,24 @@
+{
+  "name": "sonika-converter",
+  "productName": "Sonika Converter",
+  "version": "1.0.0",
+  "description": "Sonika Converter - fast video to audio, Handy transcripts, PDF, Word, video and image tools on a radial wheel",
+  "main": "src/main/main.js",
+  "author": "Mehul",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "test": "node test/run-all.js",
+    "pack": "node packaging/pack.js"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^45.3.3"
+  },
+  "dependencies": {
+    "mupdf": "^1.28.6",
+    "pdf-lib": "^1.17.1",
+    "sharp": "^0.35.5"
+  }
+}

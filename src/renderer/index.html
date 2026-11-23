@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' file: 'unsafe-inline'; img-src 'self' file: data:; font-src 'self' file:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Sonika Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="titlebar">
+    <div class="brand"><img src="../../assets/png/icon-64.png" alt=""><span>Sonika Converter</span></div>
+    <div class="spacer"></div>
+    <div class="gear-wrap">
+      <button class="icon-btn" id="btn-settings" title="Settings" aria-label="Settings"></button>
+      <span class="warn-dot" id="settings-warn" hidden></span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="stage" id="stage" aria-label="Converter wheel">
+      <div class="stage-grid"></div>
+      <div class="held-bar" id="held-bar" hidden>
+        <span class="dot"></span><span class="txt" id="held-text"></span>
+        <button class="btn btn-sm btn-ghost" id="held-clear">Clear</button>
+      </div>
+      <div class="drop-veil" id="drop-veil" hidden>Drop on a lit slot</div>
+      <div class="wheel-host" id="wheel-host"></div>
+      <div class="stage-foot" id="stage-foot">
+        <span><span class="kc">1</span>-<span class="kc">6</span> slot</span><i class="sep"></i>
+        <span>Scroll or <span class="kc">&#8592;</span><span class="kc">&#8594;</span> tool</span><i class="sep"></i>
+        <span><span class="kc">Enter</span> choose</span><i class="sep"></i>
+        <span>Drop files anywhere</span>
+      </div>
+      <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+    </section>
+
+    <aside class="queue" aria-label="Jobs">
+      <div class="queue-head">
+        <h2>Jobs</h2><span class="count" id="queue-count"></span>
+        <span class="spacer"></span>
+        <button class="btn btn-sm btn-ghost" id="btn-clear" hidden>Clear finished</button>
+      </div>
+      <div class="queue-list" id="queue-list" role="list"></div>
+    </aside>
+  </main>
+
+  <div class="settings-backdrop" id="settings" hidden></div>
+  <div class="notice" id="notice" role="status" aria-live="polite"></div>
+
+  <script src="icons.js"></script>
+  <script src="wheel.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
