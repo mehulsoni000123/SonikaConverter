@@ -1,0 +1,51 @@
+SONIKA CONVERTER 1.0.0  -  HOW TO INSTALL AND USE
+==================================================
+Free Windows 11 file converter. Works offline. No login, no ads.
+By Mehul Soni (@mehuledits.ai)
+
+WHAT IT DOES
+- Video to audio (MP3 etc.)
+- Transcripts (speech to text) using the free Handy app
+- PDF tools
+- Word / Excel / PowerPoint to PDF (needs Microsoft Office on your PC)
+- Video tools and image tools
+All tools sit on one round "wheel" menu.
+
+INSTALL (no installer needed)
+1. Download  Sonika-Converter-1.0.0-win-x64.zip  from the Releases page.
+2. Right-click the zip, choose "Extract All", and pick a folder you will keep
+   (for example C:\Apps). Do NOT run it from inside the zip.
+3. Open the extracted folder "Sonika Converter" and double-click
+   "Sonika Converter.exe".
+4. Windows may show "Windows protected your PC". This happens because the app
+   is not code-signed (a certificate costs money). Click "More info", then
+   "Run anyway".
+
+EXTRA PROGRAMS (only for some tools)
+- FFmpeg   : needed for video/audio tools. Free: https://ffmpeg.org
+             Then open Settings (gear icon) and point the app to ffmpeg.exe.
+- Handy    : needed only for transcripts. Free: https://github.com/cjpais/Handy
+- MS Office: needed only for Word/Excel/PowerPoint to PDF.
+
+HOW TO USE
+- Home screen: move the mouse toward a slot on the wheel, scroll to change the
+  tool inside that slot, click to choose it.
+- Drag files anywhere onto the window, then drop them on a slot.
+- Hotkey: press Ctrl+Alt+Space anywhere in Windows to pop the wheel over your
+  work (if another app uses it, the app picks another shortcut and tells you
+  in Settings).
+- Right-click a file in Explorer > Show more options > Sonika Converter
+  (only after you run the optional install script from the source code).
+- Progress is shown in a small card at the bottom right. You can cancel, open
+  the output folder or copy transcript text from there.
+
+UNINSTALL
+Delete the "Sonika Converter" folder. Settings are in your Windows user
+profile (AppData). Nothing else is installed.
+
+PRIVACY
+All network requests are blocked inside the app. Your files never leave your PC.
+
+SOURCE CODE AND HELP
+https://github.com/mehulsoni000123/SonikaConverter
+Questions or bugs: message @mehuledits.ai on Instagram.
